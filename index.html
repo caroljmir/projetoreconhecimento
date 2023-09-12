@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <script src="main.js"></script>
+   <link rel="stylesheet" href="style.css">
+    <title>Reconhecimento Facial</title>
+</head>
+<body>
+    <h1>IDENTIFICADOR DE IMAGENS</h1>
+
+    <p>O site identificará os seguintes membros da família:</p>
+
+    <b class="familiares">
+        Mãe
+       <hr>
+       Pai
+       <hr>
+       Filha
+        <hr>
+        Irmão
+        <hr>
+    </b>
+
+    <div id="camera">
+
+    </div>
+   <div id="imagem_capturada">
+
+   </div>
+    <button onclick="capturarimagem()" class="btn btn-success">Capturar imagem</button>
+    <br> <br>
+    <button onclick="identificarimagem()" class="btn btn-danger">Identificar Imagem</button>
+<br><br>
+    <span id="membro">Membro da família:</span>
+    <br><br>
+    <span id="precisão">Precisão da decisão:</span>
+</body>
+</html>
